@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data: the raw dataset is downloaded by src/data_prep.py, and the splits are
+# regenerated from it (fixed seed). Only the test split is kept so the UIs
+# work straight after cloning.
+data/raw/
+data/processed/*
+!data/processed/test.csv
+
+# UI caches
+ui/.cache/
+desktop/.cache/
+
+# Build output
+build/
+dist/
+*.spec
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
