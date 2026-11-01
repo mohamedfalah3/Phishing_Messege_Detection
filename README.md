@@ -38,6 +38,7 @@ phishing/
 │   ├── figures/             # all plots
 │   └── errors/              # false positive / false negative messages (CSV)
 ├── ui/                      # Streamlit web app (see ui/README.md)
+├── desktop/                 # PySide6 desktop app (see desktop/README.md)
 ├── report/REPORT.md         # project report
 └── presentation/            # slide deck (.pptx with speaker notes, + PDF copy)
 ```
@@ -83,6 +84,15 @@ streamlit run app.py        # or double-click ui/run_ui.bat on Windows
 Opens at http://localhost:8501 with six pages: overview, analyze a message,
 batch scan, live model performance (threshold slider), error explorer, and
 dataset & method. Details in [ui/README.md](ui/README.md).
+
+### Desktop app
+
+```bash
+python desktop/main.py      # or double-click desktop/run_desktop.bat on Windows
+```
+
+A native Windows app (PySide6 / Qt) with the same features plus opening `.txt` / `.eml`
+e-mail files, sortable tables and CSV export. Details in [desktop/README.md](desktop/README.md).
 
 ## Dataset
 
